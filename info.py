@@ -11,9 +11,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['24486903'])
+API_HASH = environ['f61bd5a6d9bf5fc2d824ae8eea6abe55']
+BOT_TOKEN = environ['6955280478:AAH2QFsXTpXpKqQ7QmRuAAEXgVKk8wtppYc']
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -36,7 +36,7 @@ DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://godzenitsu:safeer. 123
 DATABASE_NAME = environ.get('DATABASE_NAME', "nezuko")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'lisa_collocations')
 
 # Filters Configuration 
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
@@ -57,8 +57,8 @@ SHORT_API = environ.get("SHORT_API")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','lisa_auto_filter:)
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'lisa_auto_filter')
+LOG_CHANNEL = int(environ.get('lisa_auto_filter','lisa_auto_filter:)
+SUPPORT_CHAT = environ.get('lisa_auto_filter', 'lisa_auto_filter')
 P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
